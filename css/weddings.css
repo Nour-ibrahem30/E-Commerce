@@ -1,0 +1,16 @@
+.top-header {
+    background-color: #826300;
+}
+
+.filter .head i {
+    color: #826300;
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 .25rem rgba(130, 99, 0, .25);
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #f8f9fa;
+}
