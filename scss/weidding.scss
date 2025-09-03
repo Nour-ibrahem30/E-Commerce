@@ -1,0 +1,159 @@
+/* Start Header Section*/
+header {
+    .top-header {
+        height: 40px;
+        background-color: #826300;
+        padding: 5px;
+    }
+
+    .navbar {
+        background-color: #faeddf !important;
+        height: 70px;
+
+        img {
+            max-height: 100px;
+            width: auto;
+        }
+
+        @media (max-width: 992px) {
+            height: 95px;
+
+            .navbar-collapse a {
+                color: white !important;
+            }
+        }
+    }
+}
+
+/* End Header Section*/
+
+/* Start Filter Section*/
+.filter-section {
+    gap: 3rem;
+
+    .filter {
+        max-width: 270px;
+
+        @media (max-width: 768px) {
+            .filter {
+                max-width: 100%;
+                padding: 15px;
+            }
+        }
+
+        .head {
+            border: 1px solid #ccc;
+            width: 100px;
+            padding: 10px;
+            height: 40px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 2px #ccc;
+
+            h3 {
+                font-size: 20px;
+                font-weight: 600;
+                margin: 0;
+            }
+
+            i {
+                font-size: 18px;
+            }
+        }
+
+        .accordion-button {
+            background-color: #cfe2ff;
+            color: #000;
+            border-radius: 5px;
+            font-weight: 500;
+            margin-bottom: 15px;
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        form {
+            div {
+                display: flex;
+                align-items: center;
+                margin-bottom: 8px;
+
+                input[type="checkbox"] {
+                    accent-color: #0075ff;
+                    margin-right: 8px;
+                    cursor: pointer;
+                }
+
+                label {
+                    cursor: pointer;
+                    font-size: 15px;
+                    color: #333;
+                }
+            }
+        }
+
+        /* More filters text */
+        .accordion-body {
+            i {
+                margin-top: 10px;
+                margin-right: 15px;
+                color: #826300;
+            }
+
+            span {
+                font-size: 14px;
+                color: #826300;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .product {
+        .img {
+            width: 320px;
+            height: 350px;
+
+            img {
+                width: inherit;
+                height: inherit;
+            }
+        }
+
+        .col-lg-3 {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
+
+/* End Filter Section*/
+/* Start Footer Section*/
+footer {
+    background-color: #515050;
+    padding: 20px;
+}
+
+footer .info-one p {
+    width: 186px;
+}
+
+footer .info-one input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+/* End Footer Section*/
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}

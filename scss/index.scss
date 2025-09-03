@@ -13,23 +13,25 @@ header {
     }
 
     .navbar {
-        background-color: #FAEDDF !important;
+        background-color: #faeddf !important;
         height: 70px;
 
         @media (max-width: 992px) {
-                height: 95px;
-            }
+            height: 95px;
+        }
+
         img {
             max-height: 100px;
             width: auto;
         }
-.navbar-collapse {
-    @media (max-width: 992px) {
-        a {
-            color: white !important;
+
+        .navbar-collapse {
+            @media (max-width: 992px) {
+                a {
+                    color: white !important;
+                }
+            }
         }
-    }
-}
     }
 }
 
@@ -42,7 +44,7 @@ header {
     color: #fff;
 
     &::before {
-        content: '';
+        content: "";
         position: absolute;
         background-image: url(../imgs/Home.jpg);
         background-repeat: no-repeat;
@@ -136,13 +138,13 @@ header {
         color: #fff;
 
         &::before {
-            content: '';
+            content: "";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-image: url('../imgs/Rectange.jpg');
+            background-image: url("../imgs/Rectange.jpg");
             background-size: cover;
             background-repeat: no-repeat;
             background-position: center;
@@ -237,7 +239,7 @@ header {
     background-color: #cccccc;
 
     .boxes {
-        @media(max-width:1300px) {
+        @media (max-width: 1300px) {
             flex-wrap: wrap;
         }
 
@@ -271,7 +273,6 @@ footer {
             outline: none;
         }
     }
-
 }
 
 /* End Footer Section*/
