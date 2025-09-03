@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Premium menswear: suits, vests, tuxedos, shirts, and custom made-to-order tailoring.">
+    <meta name="theme-color" content="#826300">
+    <title>Weddings</title>
+    <!-- Start Css Files -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/master.css">
+    <!-- Library FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <header>
+        <div class="top-header py-2">
+            <div class="container d-flex justify-content-center gap-3">
+                <span class="text-white text-uppercase fw-bold">Mega Sale</span>
+                <span class="text-white">Take 10% OFF</span>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" aria-label="Main navigation">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./imgs/Logo.png" alt="E-Commerce Logo" loading="lazy" height="100">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./weddings.html" aria-current="page">Weddings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    </ul>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-dark" aria-label="Account"><i class="fa-solid fa-user" aria-hidden="true"></i></a>
+                        <a href="#" class="text-dark" aria-label="Cart"><i class="fa-solid fa-cart-shopping" aria-hidden="true"></i></a>
+                        <a href="#" class="text-dark" aria-label="Search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End Navbar -->
+
+    <!-- Start Filter Slide -->
+    <div class="filter-section d-flex">
+        <div class="filter py-2 p-2">
+            <div class="head d-flex gap-3 align-items-center mb-3">
+                <h3>Filter</h3>
+                <i class="fa-solid fa-filter" aria-hidden="true"></i>
+            </div>
+            <div class="accordion position-fixed" id="accordionPanelsStayOpenExample" style="width: 250px;">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                            aria-controls="panelsStayOpen-collapseOne">
+                            More Filter
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <form method="post">
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="Casual-Shirts" id="casual-shirts">
+                                    <label class="form-check-label" for="casual-shirts">Casual Shirts</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="formal-shirts" id="formal-shirts">
+                                    <label class="form-check-label" for="formal-shirts">Formal Shirts</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="blazers" id="blazers">
+                                    <label class="form-check-label" for="blazers">Blazers</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="suits" id="suits">
+                                    <label class="form-check-label" for="suits">Suits</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="black-the-attire" id="black-the-attire">
+                                    <label class="form-check-label" for="black-the-attire">Black the attire</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="black-suits" id="black-suits">
+                                    <label class="form-check-label" for="black-suits">Black suits</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="pants-and-trousers" id="pants-and-trousers">
+                                    <label class="form-check-label" for="pants-and-trousers">Pants and Trousers</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="hoodie" id="hoodie">
+                                    <label class="form-check-label" for="hoodie">Hoodie</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="over-shirts" id="over-shirts">
+                                    <label class="form-check-label" for="over-shirts">Over shirts</label>
+                                </div>
+                            </form>
+                            <i class="fa-solid fa-arrows-up-down" aria-hidden="true"></i>
+                            <span>More Filters</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                            aria-controls="panelsStayOpen-collapseTwo">
+                            Cloth
+                        </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <form method="post">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="cotton" id="cotton">
+                                    <label class="form-check-label" for="cotton">Cotton</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="linen" id="linen">
+                                    <label class="form-check-label" for="linen">Linen</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="poly" id="poly">
+                                    <label class="form-check-label" for="poly">Poly</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="oxford" id="oxford">
+                                    <label class="form-check-label" for="oxford">Oxford</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="checked" id="checked">
+                                    <label class="form-check-label" for="checked">Checked</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="floral" id="floral">
+                                    <label class="form-check-label" for="floral">Floral</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="weave" id="weave">
+                                    <label class="form-check-label" for="weave">Weave</label>
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="knitted" id="knitted">
+                                    <label class="form-check-label" for="knitted">Knitted</label>
+                                </div>
+                            </form>
+                            <i class="fa-solid fa-arrows-up-down" aria-hidden="true"></i>
+                            <span>More Filters</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product flex-fill">
+            <div class="container-fluid">
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="img">
+                            <img src="./imgs/Product One.png" alt="Product One">
+                        </div>
+                        <div class="text">
+                            <h1>Travel Hoodie</h1>
+                            <p>₹ 699</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="img">
+                            <img src="./imgs/Product Two.png" alt="Product Two">
+                        </div>
+                        <div class="text">
+                            <h1>Travel Hoodie</h1>
+                            <p>₹ 699</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="img">
+                            <img src="./imgs/Product Three.png" alt="Product Three">
+                        </div>
+                        <div class="text">
+                            <h1>Travel Hoodie</h1>
+                            <p>₹ 699</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="img">
+                            <img src="./imgs/Product Four.jpg" alt="Product Four">
+                        </div>
+                        <div class="text">
+                            <h1>Travel Hoodie</h1>
+                            <p>₹ 699</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="img">
+                            <img src="./imgs/Product Five.png" alt="Product Five">
+                        </div>
+                        <div class="text">
+                            <h1>Travel Hoodie</h1>
+                            <p>₹ 699</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="img">
+                            <img src="./imgs/Collection One.png" alt="Collection One">
+                        </div>
+                        <div class="text">
+                            <h1>Travel Hoodie</h1>
+                            <p>₹ 699</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="img">
+                            <img src="./imgs/Collection Two.png" alt="Collection Two">
+                        </div>
+                        <div class="text">
+                            <h1>Travel Hoodie</h1>
+                            <p>₹ 699</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="img">
+                            <img src="./imgs/Collection Three.png" alt="Collection Three">
+                        </div>
+                        <div class="text">
+                            <h1>Travel Hoodie</h1>
+                            <p>₹ 699</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- End Filter Slide -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content d-flex gap-5 justify-content-between align-items-center flex-wrap">
+                <div class="info-one">
+                    <h5 class="text-white">SIGN UP AND SAVE</h5>
+                    <p class="text-white mt-3">Subscribe to get special offers, free giveaways, and once-in-a-lifetime
+                        deals.</p>
+                    <form method="post" action="#" class="text-center" novalidate>
+                        <label for="subscribe-email" class="visually-hidden">Email address</label>
+                        <input type="email" id="subscribe-email" name="email" placeholder="Enter Your Email" autocomplete="email" inputmode="email" required>
+                        <button type="submit" class="visually-hidden">Subscribe</button>
+                        <i class="fa-regular fa-envelope text-white" aria-hidden="true"></i>
+                    </form>
+                    <div class="icons mt-3 text-white">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook ms-3 me-3"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="info-two text-white">
+                    <h3>LOCATION</h3>
+                    <p>007,James bond street,<br>
+                        London,<br>
+                        England.</p>
+                    <p>Mon-Sat 10AM - 9PM</p>
+                    <span>Sun:Closed</span>
+                </div>
+                <div class="info-three">
+                    <ul class="list-unstyled text-white">
+                        <li>About</li>
+                        <li>FAQ</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                        <li>Start a Return or <br>
+                            Exchange</li>
+                    </ul>
+                </div>
+                <div class="info-four">
+                    <ul class="list-unstyled text-white">
+                        <li>Tailoring</li>
+                        <li>Made-to-Measure</li>
+                        <li>Weddings</li>
+                        <li>Made-to-Order</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Js File -->
+    <script src="./js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
+
