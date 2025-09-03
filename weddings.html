@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Premium menswear: suits, vests, tuxedos, shirts, and custom made-to-order tailoring.">
     <meta name="theme-color" content="#826300">
+    <link rel="canonical" href="/weddings.html">
+    <meta property="og:title" content="Weddings | Premium Menswear">
+    <meta property="og:description" content="Explore suits, tuxedos, shirts and custom made-to-order tailoring for weddings.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/weddings.html">
+    <meta property="og:image" content="/imgs/Logo.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Weddings | Premium Menswear">
+    <meta name="twitter:description" content="Explore suits, tuxedos, shirts and custom made-to-order tailoring for weddings.">
+    <meta name="twitter:image" content="/imgs/Logo.png">
     <title>Weddings</title>
     <!-- Start Css Files -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
@@ -27,7 +37,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" aria-label="Main navigation">
             <div class="container">
                 <a class="navbar-brand" href="./index.html">
-                    <img src="./imgs/Logo.png" alt="E-Commerce Logo" loading="lazy" height="100">
+                    <img src="./imgs/Logo.png" alt="E-Commerce Logo" loading="lazy" width="100" height="100">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -53,6 +63,13 @@
     </header>
     <!-- End Navbar -->
 
+    <!-- Page Title -->
+    <section class="page-header py-4">
+        <div class="container">
+            <h1 class="h3 m-0">Weddings</h1>
+        </div>
+    </section>
+
     <!-- Filter Panel -->
     <section class="filter py-2 p-2">
         <div class="head d-flex gap-3 align-items-center">
@@ -66,35 +83,38 @@
                         More Filter
                     </button>
                 </h2>
-                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionPanelsStayOpenExample">
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
                     <div class="accordion-body">
                         <form method="post">
-                            <input type="checkbox" name="Casual-Shirts" id="casual-shirts">
-                            <label for="casual-shirts">Casual Shirts</label>
+                            <fieldset>
+                                <legend class="visually-hidden">Categories</legend>
+                                <input type="checkbox" name="category" id="casual-shirts" value="casual-shirts">
+                                <label for="casual-shirts">Casual Shirts</label>
 
-                            <input type="checkbox" name="formal-shirts" id="formal-shirts">
-                            <label for="formal-shirts">Formal Shirts</label>
+                                <input type="checkbox" name="category" id="formal-shirts" value="formal-shirts">
+                                <label for="formal-shirts">Formal Shirts</label>
 
-                            <input type="checkbox" name="blazers" id="blazers">
-                            <label for="blazers">Blazers</label>
+                                <input type="checkbox" name="category" id="blazers" value="blazers">
+                                <label for="blazers">Blazers</label>
 
-                            <input type="checkbox" name="suits" id="suits">
-                            <label for="suits">Suits</label>
+                                <input type="checkbox" name="category" id="suits" value="suits">
+                                <label for="suits">Suits</label>
 
-                            <input type="checkbox" name="black-the-attire" id="black-the-attire">
-                            <label for="black-the-attire">Black the attire</label>
+                                <input type="checkbox" name="category" id="black-attire" value="black-attire">
+                                <label for="black-attire">Black Attire</label>
 
-                            <input type="checkbox" name="black-suits" id="black-suits">
-                            <label for="black-suits">Black suits</label>
+                                <input type="checkbox" name="category" id="black-suits" value="black-suits">
+                                <label for="black-suits">Black Suits</label>
 
-                            <input type="checkbox" name="pants-and-trousers" id="pants-and-trousers">
-                            <label for="pants-and-trousers">Pants and Trousers</label>
+                                <input type="checkbox" name="category" id="pants-and-trousers" value="pants-and-trousers">
+                                <label for="pants-and-trousers">Pants and Trousers</label>
 
-                            <input type="checkbox" name="hoodie" id="hoodie">
-                            <label for="hoodie">Hoodie</label>
+                                <input type="checkbox" name="category" id="hoodie" value="hoodie">
+                                <label for="hoodie">Hoodie</label>
 
-                            <input type="checkbox" name="over-shirts" id="over-shirts">
-                            <label for="over-shirts">Over shirts</label>
+                                <input type="checkbox" name="category" id="over-shirts" value="over-shirts">
+                                <label for="over-shirts">Over shirts</label>
+                            </fieldset>
                         </form>
                         <i class="fa-solid fa-arrows-up-down"></i>
                         <span>More Filters</span>
@@ -107,32 +127,35 @@
                         Cloth
                     </button>
                 </h2>
-                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo" data-bs-parent="#accordionPanelsStayOpenExample">
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
                     <div class="accordion-body">
                         <form method="post">
-                            <input type="checkbox" name="cotton" id="cotton">
-                            <label for="cotton">Cotton</label>
+                            <fieldset>
+                                <legend class="visually-hidden">Fabric</legend>
+                                <input type="checkbox" name="fabric" id="cotton" value="cotton">
+                                <label for="cotton">Cotton</label>
 
-                            <input type="checkbox" name="linen" id="linen">
-                            <label for="linen">Linen</label>
+                                <input type="checkbox" name="fabric" id="linen" value="linen">
+                                <label for="linen">Linen</label>
 
-                            <input type="checkbox" name="poly" id="poly">
-                            <label for="poly">Poly</label>
+                                <input type="checkbox" name="fabric" id="poly" value="poly">
+                                <label for="poly">Poly</label>
 
-                            <input type="checkbox" name="oxford" id="oxford">
-                            <label for="oxford">oxford</label>
+                                <input type="checkbox" name="fabric" id="oxford" value="oxford">
+                                <label for="oxford">Oxford</label>
 
-                            <input type="checkbox" name="checked" id="checked">
-                            <label for="checked">Checked</label>
+                                <input type="checkbox" name="fabric" id="checked" value="checked">
+                                <label for="checked">Checked</label>
 
-                            <input type="checkbox" name="floral" id="floral">
-                            <label for="floral">Floral</label>
+                                <input type="checkbox" name="fabric" id="floral" value="floral">
+                                <label for="floral">Floral</label>
 
-                            <input type="checkbox" name="weave" id="weave">
-                            <label for="weave">Weave</label>
+                                <input type="checkbox" name="fabric" id="weave" value="weave">
+                                <label for="weave">Weave</label>
 
-                            <input type="checkbox" name="knitted" id="knitted">
-                            <label for="knitted">Knitted</label>
+                                <input type="checkbox" name="fabric" id="knitted" value="knitted">
+                                <label for="knitted">Knitted</label>
+                            </fieldset>
                         </form>
                         <i class="fa-solid fa-arrows-up-down"></i>
                         <span>More Filters</span>
