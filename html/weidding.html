@@ -1,452 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Premium menswear: suits, vests, tuxedos, shirts, and custom made-to-order tailoring."
+        />
+        <meta name="theme-color" content="#826300" />
+        <title>Weddings</title>
+        <!-- Start Css Files -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+        <link rel="stylesheet" href="../css/bootstrap.min.css" />
+        <link rel="stylesheet" href="../scss/weidding.css" />
+        <!-- Library FontAwesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            crossorigin="anonymous"
+        />
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description"
-        content="Premium menswear: suits, vests, tuxedos, shirts, and custom made-to-order tailoring." />
-    <meta name="theme-color" content="#826300" />
-    <title>Weddings</title>
-    <!-- Start Css Files -->
-    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../scss/weidding.css" />
-    <!-- Library FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        crossorigin="anonymous" />
-</head>
-
-<body>
-    <!-- Start Navbar -->
-    <header>
-        <div class="top-header py-2">
-            <div class="container d-flex justify-content-center gap-3">
-                <span class="text-white text-uppercase fw-bold">Mega Sale</span>
-                <span class="text-white">Take 10% OFF</span>
+    <body>
+        <!-- Start Navbar -->
+        <header>
+            <div class="top-header py-2">
+                <div class="container d-flex justify-content-center gap-3">
+                    <span class="text-white text-uppercase fw-bold">Mega Sale</span>
+                    <span class="text-white">Take 10% OFF</span>
+                </div>
             </div>
-        </div>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm" aria-label="Main navigation">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="../imgs/Logo.png" alt="E-Commerce Logo" loading="lazy" height="100" />
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <nav
+                class="navbar navbar-expand-lg navbar-light bg-light shadow-sm"
+                aria-label="Main navigation"
+            >
+                <div class="container">
+                    <a class="navbar-brand" href="#">
+                        <img
+                            src="../imgs/Logo.png"
+                            alt="E-Commerce Logo"
+                            loading="lazy"
+                            height="100"
+                        />
+                    </a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
-                        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Weddings</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                    </ul>
-                    <div class="d-flex gap-3">
-                        <a href="#" class="text-dark" aria-label="Account">
-                            <i class="fa-solid fa-user" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" class="text-dark" aria-label="Cart">
-                            <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" class="text-dark" aria-label="Search">
-                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-                        </a>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+                            <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Shop</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Weddings</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        </ul>
+                        <div class="d-flex gap-3">
+                            <a href="#" class="text-dark" aria-label="Account">
+                                <i class="fa-solid fa-user" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="text-dark" aria-label="Cart">
+                                <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="text-dark" aria-label="Search">
+                                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Navbar -->
+        <!-- Start Filter Slide -->
+        <div class="filter-section d-flex mb-5">
+            <div class="filter py-2 p-2">
+                <div class="head d-flex gap-3 align-items-center mb-3">
+                    <h3>Filter</h3>
+                    <i class="fa-solid fa-filter"></i>
+                </div>
+                <div class="accordion" id="accordionPanelsStayOpenExample" style="width: 250px">
+                    <!-- More Filter -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseOne"
+                                aria-expanded="true"
+                                aria-controls="panelsStayOpen-collapseOne"
+                            >
+                                More Filter
+                            </button>
+                        </h2>
+                        <div
+                            id="panelsStayOpen-collapseOne"
+                            class="accordion-collapse collapse show"
+                        >
+                            <div class="accordion-body">
+                                <form method="post">
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="casual-shirts"
+                                            data-product="casual"
+                                        />
+                                        <label for="casual-shirts">Casual Shirts</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="formal-shirts"
+                                            data-product="formal"
+                                        />
+                                        <label for="formal-shirts">Formal Shirts</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="blazers" data-product="blazer" />
+                                        <label for="blazers">Blazers</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="suits" data-product="suit" />
+                                        <label for="suits">Suits</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="black-the-attire"
+                                            data-product="black-attire"
+                                        />
+                                        <label for="black-the-attire">Black the attire</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="black-suits"
+                                            data-product="black-suit"
+                                        />
+                                        <label for="black-suits">Black suits</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="pants-and-trousers"
+                                            data-product="pants"
+                                        />
+                                        <label for="pants-and-trousers">Pants and Trousers</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="hoodie" data-product="hoodie" />
+                                        <label for="hoodie">Hoodie</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="over-shirts"
+                                            data-product="overshirt"
+                                        />
+                                        <label for="over-shirts">Over shirts</label>
+                                    </div>
+                                </form>
+                                <i class="fa-solid fa-arrows-up-down"></i>
+                                <span>More Filters</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- wedding Filter -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#panelsStayOpen-collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="panelsStayOpen-collapseTwo"
+                            >
+                                wedding
+                            </button>
+                        </h2>
+                        <div
+                            id="panelsStayOpen-collapseTwo"
+                            class="accordion-collapse collapse show"
+                        >
+                            <div class="accordion-body">
+                                <form method="post">
+                                    <div>
+                                        <input type="checkbox" id="cotton" data-product="cotton" />
+                                        <label for="cotton">Cotton</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="linen" data-product="linen" />
+                                        <label for="linen">Linen</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="poly" data-product="poly" />
+                                        <label for="poly">Poly</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="oxford" data-product="oxford" />
+                                        <label for="oxford">Oxford</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="checked"
+                                            data-product="checked"
+                                        />
+                                        <label for="checked">Checked</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="floral" data-product="floral" />
+                                        <label for="floral">Floral</label>
+                                    </div>
+
+                                    <div>
+                                        <input type="checkbox" id="weave" data-product="weave" />
+                                        <label for="weave">Weave</label>
+                                    </div>
+
+                                    <div>
+                                        <input
+                                            type="checkbox"
+                                            id="knitted"
+                                            data-product="knitted"
+                                        />
+                                        <label for="knitted">Knitted</label>
+                                    </div>
+                                </form>
+                                <i class="fa-solid fa-arrows-up-down"></i>
+                                <span>More Filters</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Products -->
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="product mb-lg-5">
+                    <!-- More Filter Products -->
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="hoodie">
+                            <div class="img">
+                                <img src="../imgs/wedding-1.png" alt="Travel Hoodie" />
+                            </div>
+                            <div class="text">
+                                <h1>Travel Hoodie</h1>
+                                <p>₹ 699</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="suit">
+                            <div class="img">
+                                <img src="../imgs/wedding-2.png" alt="Classic Suit" />
+                            </div>
+                            <div class="text">
+                                <h1>Classic Suit</h1>
+                                <p>₹ 1200</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="casual">
+                            <div class="img">
+                                <img src="../imgs/wedding-3.png" alt="Casual Shirt" />
+                            </div>
+                            <div class="text">
+                                <h1>Casual Shirt</h1>
+                                <p>₹ 499</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="formal">
+                            <div class="img">
+                                <img src="../imgs/wedding-4.png" alt="Formal Shirt" />
+                            </div>
+                            <div class="text">
+                                <h1>Formal Shirt</h1>
+                                <p>₹ 699</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="blazer">
+                            <div class="img">
+                                <img src="../imgs/wedding-5.png" alt="Blazer" />
+                            </div>
+                            <div class="text">
+                                <h1>Blazer</h1>
+                                <p>₹ 1500</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="pants">
+                            <div class="img">
+                                <img src="../imgs/wedding-6.png" alt="Pants" />
+                            </div>
+                            <div class="text">
+                                <h1>Pants</h1>
+                                <p>₹ 799</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="overshirt">
+                            <div class="img">
+                                <img src="../imgs/wedding-7.png" alt="Overshirt" />
+                            </div>
+                            <div class="text">
+                                <h1>Overshirt</h1>
+                                <p>₹ 599</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="black-suit">
+                            <div class="img">
+                                <img src="../imgs/wedding-8.png" alt="Black Suit" />
+                            </div>
+                            <div class="text">
+                                <h1>Black Suit</h1>
+                                <p>₹ 2000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="cotton">
+                            <div class="img">
+                                <img src="../imgs/wedding-1.png" alt="Cotton Shirt" />
+                            </div>
+                            <div class="text">
+                                <h1>Cotton Shirt</h1>
+                                <p>₹ 499</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="linen">
+                            <div class="img">
+                                <img src="../imgs/wedding-2.png" alt="Linen Shirt" />
+                            </div>
+                            <div class="text">
+                                <h1>Linen Shirt</h1>
+                                <p>₹ 699</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="poly">
+                            <div class="img">
+                                <img src="../imgs/wedding-3.png" alt="Polyester Shirt" />
+                            </div>
+                            <div class="text">
+                                <h1>Polyester Shirt</h1>
+                                <p>₹ 399</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="oxford">
+                            <div class="img">
+                                <img src="../imgs/wedding-4.png" alt="Oxford Shirt" />
+                            </div>
+                            <div class="text">
+                                <h1>Oxford Shirt</h1>
+                                <p>₹ 799</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row text-center">
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="checked">
+                            <div class="img">
+                                <img src="../imgs/wedding-5.png" alt="Checked Shirt" />
+                            </div>
+                            <div class="text">
+                                <h1>Checked Shirt</h1>
+                                <p>₹ 599</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="floral">
+                            <div class="img">
+                                <img src="../imgs/wedding-6.png" alt="Floral Shirt" />
+                            </div>
+                            <div class="text">
+                                <h1>Floral Shirt</h1>
+                                <p>₹ 899</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="weave">
+                            <div class="img">
+                                <img src="../imgs/wedding-7.png" alt="Weave Shirt" />
+                            </div>
+                            <div class="text">
+                                <h1>Weave Shirt</h1>
+                                <p>₹ 999</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-sm-12" data-product="knitted">
+                            <div class="img">
+                                <img src="../imgs/wedding-8.png" alt="Knitted Shirt" />
+                            </div>
+                            <div class="text">
+                                <h1>Knitted Shirt</h1>
+                                <p>₹ 1099</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Filter Slide -->
+
+        <!-- Start Buttons -->
+        <nav aria-label="Page navigation example" class="mb-5 d-flex justify-content-center">
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
         </nav>
-    </header>
-    <!-- End Navbar -->
-    <!-- Start Filter Slide -->
-    <div class="filter-section d-flex mb-5">
-        <div class="filter py-2 p-2">
-            <div class="head d-flex gap-3 align-items-center mb-3">
-                <h3>Filter</h3>
-                <i class="fa-solid fa-filter"></i>
-            </div>
-            <div class="accordion" id="accordionPanelsStayOpenExample" style="width: 250px">
-                <!-- More Filter -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
-                            aria-controls="panelsStayOpen-collapseOne">
-                            More Filter
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            <form method="post">
-                                <div>
-                                    <input type="checkbox" id="casual-shirts" data-product="casual" />
-                                    <label for="casual-shirts">Casual Shirts</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="formal-shirts" data-product="formal" />
-                                    <label for="formal-shirts">Formal Shirts</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="blazers" data-product="blazer" />
-                                    <label for="blazers">Blazers</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="suits" data-product="suit" />
-                                    <label for="suits">Suits</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="black-the-attire" data-product="black-attire" />
-                                    <label for="black-the-attire">Black the attire</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="black-suits" data-product="black-suit" />
-                                    <label for="black-suits">Black suits</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="pants-and-trousers" data-product="pants" />
-                                    <label for="pants-and-trousers">Pants and Trousers</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="hoodie" data-product="hoodie" />
-                                    <label for="hoodie">Hoodie</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="over-shirts" data-product="overshirt" />
-                                    <label for="over-shirts">Over shirts</label>
-                                </div>
-                            </form>
-                            <i class="fa-solid fa-arrows-up-down"></i>
-                            <span>More Filters</span>
+        <!-- End Buttons -->
+        <!-- End Filter Slide -->
+        <!-- Start Footer -->
+        <footer>
+            <div class="container">
+                <div
+                    class="footer-content d-flex gap-5 justify-content-between align-items-center flex-wrap"
+                >
+                    <div class="info-one">
+                        <h5 class="text-white">SIGN UP AND SAVE</h5>
+                        <p class="text-white mt-3">
+                            Subscribe to get special offers, free giveaways, and once-in-a-lifetime
+                            deals.
+                        </p>
+                        <form method="post" action="#" class="text-center" novalidate>
+                            <label for="subscribe-email" class="visually-hidden">
+                                Email address
+                            </label>
+                            <input
+                                type="email"
+                                id="subscribe-email"
+                                name="email"
+                                placeholder="Enter Your Email"
+                                autocomplete="email"
+                                inputmode="email"
+                                required
+                            />
+                            <button type="submit" class="visually-hidden">Subscribe</button>
+                            <i class="fa-regular fa-envelope text-white" aria-hidden="true"></i>
+                        </form>
+                        <div class="icons mt-3 text-white">
+                            <i class="fa-brands fa-instagram"></i>
+                            <i class="fa-brands fa-facebook ms-3 me-3"></i>
+                            <i class="fa-brands fa-twitter"></i>
                         </div>
                     </div>
-                </div>
-
-                <!-- wedding Filter -->
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
-                            aria-controls="panelsStayOpen-collapseTwo">
-                            wedding
-                        </button>
-                    </h2>
-                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show">
-                        <div class="accordion-body">
-                            <form method="post">
-                                <div>
-                                    <input type="checkbox" id="cotton" data-product="cotton" />
-                                    <label for="cotton">Cotton</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="linen" data-product="linen" />
-                                    <label for="linen">Linen</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="poly" data-product="poly" />
-                                    <label for="poly">Poly</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="oxford" data-product="oxford" />
-                                    <label for="oxford">Oxford</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="checked" data-product="checked" />
-                                    <label for="checked">Checked</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="floral" data-product="floral" />
-                                    <label for="floral">Floral</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="weave" data-product="weave" />
-                                    <label for="weave">Weave</label>
-                                </div>
-
-                                <div>
-                                    <input type="checkbox" id="knitted" data-product="knitted" />
-                                    <label for="knitted">Knitted</label>
-                                </div>
-                            </form>
-                            <i class="fa-solid fa-arrows-up-down"></i>
-                            <span>More Filters</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Products -->
-        <div class="container-fluid d-flex justify-content-center">
-            <div class="product mb-lg-5">
-                <!-- More Filter Products -->
-                <div class="row text-center">
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="hoodie">
-                        <div class="img">
-                            <img src="../imgs/wedding-1.png" alt="Travel Hoodie" />
-                        </div>
-                        <div class="text">
-                            <h1>Travel Hoodie</h1>
-                            <p>₹ 699</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="suit">
-                        <div class="img">
-                            <img src="../imgs/wedding-2.png" alt="Classic Suit" />
-                        </div>
-                        <div class="text">
-                            <h1>Classic Suit</h1>
-                            <p>₹ 1200</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="casual">
-                        <div class="img">
-                            <img src="../imgs/wedding-3.png" alt="Casual Shirt" />
-                        </div>
-                        <div class="text">
-                            <h1>Casual Shirt</h1>
-                            <p>₹ 499</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="formal">
-                        <div class="img">
-                            <img src="../imgs/wedding-4.png" alt="Formal Shirt" />
-                        </div>
-                        <div class="text">
-                            <h1>Formal Shirt</h1>
-                            <p>₹ 699</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row text-center">
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="blazer">
-                        <div class="img">
-                            <img src="../imgs/wedding-5.png" alt="Blazer" />
-                        </div>
-                        <div class="text">
-                            <h1>Blazer</h1>
-                            <p>₹ 1500</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="pants">
-                        <div class="img">
-                            <img src="../imgs/wedding-6.png" alt="Pants" />
-                        </div>
-                        <div class="text">
-                            <h1>Pants</h1>
-                            <p>₹ 799</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="overshirt">
-                        <div class="img">
-                            <img src="../imgs/wedding-7.png" alt="Overshirt" />
-                        </div>
-                        <div class="text">
-                            <h1>Overshirt</h1>
-                            <p>₹ 599</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="black-suit">
-                        <div class="img">
-                            <img src="../imgs/wedding-8.png" alt="Black Suit" />
-                        </div>
-                        <div class="text">
-                            <h1>Black Suit</h1>
-                            <p>₹ 2000</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row text-center">
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="cotton">
-                        <div class="img">
-                            <img src="../imgs/wedding-1.png" alt="Cotton Shirt" />
-                        </div>
-                        <div class="text">
-                            <h1>Cotton Shirt</h1>
-                            <p>₹ 499</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="linen">
-                        <div class="img">
-                            <img src="../imgs/wedding-2.png" alt="Linen Shirt" />
-                        </div>
-                        <div class="text">
-                            <h1>Linen Shirt</h1>
-                            <p>₹ 699</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="poly">
-                        <div class="img">
-                            <img src="../imgs/wedding-3.png" alt="Polyester Shirt" />
-                        </div>
-                        <div class="text">
-                            <h1>Polyester Shirt</h1>
-                            <p>₹ 399</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="oxford">
-                        <div class="img">
-                            <img src="../imgs/wedding-4.png" alt="Oxford Shirt" />
-                        </div>
-                        <div class="text">
-                            <h1>Oxford Shirt</h1>
-                            <p>₹ 799</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row text-center">
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="checked">
-                        <div class="img">
-                            <img src="../imgs/wedding-5.png" alt="Checked Shirt" />
-                        </div>
-                        <div class="text">
-                            <h1>Checked Shirt</h1>
-                            <p>₹ 599</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="floral">
-                        <div class="img">
-                            <img src="../imgs/wedding-6.png" alt="Floral Shirt" />
-                        </div>
-                        <div class="text">
-                            <h1>Floral Shirt</h1>
-                            <p>₹ 899</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="weave">
-                        <div class="img">
-                            <img src="../imgs/wedding-7.png" alt="Weave Shirt" />
-                        </div>
-                        <div class="text">
-                            <h1>Weave Shirt</h1>
-                            <p>₹ 999</p>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 col-sm-12" data-product="knitted">
-                        <div class="img">
-                            <img src="../imgs/wedding-8.png" alt="Knitted Shirt" />
-                        </div>
-                        <div class="text">
-                            <h1>Knitted Shirt</h1>
-                            <p>₹ 1099</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Filter Slide -->
-
-
-    <!-- Start Buttons -->
-    <nav aria-label="Page navigation example" class="mb-5  d-flex justify-content-center">
-        <ul class="pagination">
-            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
-            <li class="page-item"><a class="page-link" href="#">4</a></li>
-            <li class="page-item"><a class="page-link" href="#">5</a></li>
-            <li class="page-item"><a class="page-link" href="#">6</a></li>
-            <li class="page-item"><a class="page-link" href="#">Next</a></li>
-        </ul>
-    </nav>
-    <!-- End Buttons -->
-    <!-- End Filter Slide -->
-    <!-- Start Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content d-flex gap-5 justify-content-between align-items-center flex-wrap">
-                <div class="info-one">
-                    <h5 class="text-white">SIGN UP AND SAVE</h5>
-                    <p class="text-white mt-3">
-                        Subscribe to get special offers, free giveaways, and once-in-a-lifetime
-                        deals.
-                    </p>
-                    <form method="post" action="#" class="text-center" novalidate>
-                        <label for="subscribe-email" class="visually-hidden">
-                            Email address
-                        </label>
-                        <input type="email" id="subscribe-email" name="email" placeholder="Enter Your Email"
-                            autocomplete="email" inputmode="email" required />
-                        <button type="submit" class="visually-hidden">Subscribe</button>
-                        <i class="fa-regular fa-envelope text-white" aria-hidden="true"></i>
-                    </form>
-                    <div class="icons mt-3 text-white">
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-facebook ms-3 me-3"></i>
-                        <i class="fa-brands fa-twitter"></i>
-                    </div>
-                </div>
-                <div class="info-two text-white">
-                    <h3>LOCATION</h3>
-                    <p>
-                        007,James bond street,
-                        <br />
-                        London,
-                        <br />
-                        England.
-                    </p>
-                    <p>Mon-Sat 10AM - 9PM</p>
-                    <span>Sun:Closed</span>
-                </div>
-                <div class="info-three">
-                    <ul class="list-unstyled text-white">
-                        <li>About</li>
-                        <li>FAQ</li>
-                        <li>Services</li>
-                        <li>Contact</li>
-                        <li>
-                            Start a Return or
+                    <div class="info-two text-white">
+                        <h3>LOCATION</h3>
+                        <p>
+                            007,James bond street,
                             <br />
-                            Exchange
-                        </li>
-                    </ul>
-                </div>
-                <div class="info-four">
-                    <ul class="list-unstyled text-white">
-                        <li>Tailoring</li>
-                        <li>Made-to-Measure</li>
-                        <li>Weddings</li>
-                        <li>Made-to-Order</li>
-                    </ul>
+                            London,
+                            <br />
+                            England.
+                        </p>
+                        <p>Mon-Sat 10AM - 9PM</p>
+                        <span>Sun:Closed</span>
+                    </div>
+                    <div class="info-three">
+                        <ul class="list-unstyled text-white">
+                            <li>About</li>
+                            <li>FAQ</li>
+                            <li>Services</li>
+                            <li>Contact</li>
+                            <li>
+                                Start a Return or
+                                <br />
+                                Exchange
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-four">
+                        <ul class="list-unstyled text-white">
+                            <li>Tailoring</li>
+                            <li>Made-to-Measure</li>
+                            <li>Weddings</li>
+                            <li>Made-to-Order</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-    <!-- End Footer -->
-    <!-- Start Js File -->
-    <script src="../dist/bootstrap.bundle.js" defer></script>
-    <script type="module" src="../dist/main.js"></script>
-</body>
-
+        </footer>
+        <!-- End Footer -->
+        <!-- Start Js File -->
+        <script src="../dist/bootstrap.bundle.js" defer></script>
+        <script type="module" src="../dist/main.js"></script>
+    </body>
 </html>

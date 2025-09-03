@@ -1,4 +1,4 @@
-/* Start Header Section*/
+/* Start Header Section */
 header {
     .top-header {
         height: 40px;
@@ -15,7 +15,7 @@ header {
             width: auto;
         }
 
-        @media (max-width: 992px) {
+        @media (width <= 992px) {
             height: 95px;
 
             .navbar-collapse a {
@@ -25,16 +25,16 @@ header {
     }
 }
 
-/* End Header Section*/
+/* End Header Section */
 
-/* Start Filter Section*/
+/* Start Filter Section */
 .filter-section {
     gap: 3rem;
 
     .filter {
         max-width: 270px;
 
-        @media (max-width: 768px) {
+        @media (width <= 768px) {
             .filter {
                 max-width: 100%;
                 padding: 15px;
@@ -131,8 +131,9 @@ header {
     }
 }
 
-/* End Filter Section*/
-/* Start Footer Section*/
+/* End Filter Section */
+
+/* Start Footer Section */
 footer {
     background-color: #515050;
     padding: 20px;
@@ -149,7 +150,7 @@ footer .info-one input {
     outline: none;
 }
 
-/* End Footer Section*/
+/* End Footer Section */
 .hide {
     display: none !important;
 }
