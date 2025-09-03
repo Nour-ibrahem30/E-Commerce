@@ -214,7 +214,7 @@ header .navbar img {
   height: 40px;
 }
 .service .boxes p {
-  width: 418px;
+  width: auto;
   line-height: 1.6;
 }
 
