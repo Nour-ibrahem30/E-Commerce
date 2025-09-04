@@ -20,14 +20,11 @@ header {
 
     .navbar {
         background-color: #faeddf !important;
-        height: auto;
-        min-height: 70px;
-        padding-top: 0.25rem;
+        height: 70px;
         padding-bottom: 0.25rem;
 
-        .container {
-            max-width: 100%;
-            overflow-x: hidden;
+        @media (max-width: 992px) {
+                height: auto;
         }
 
         img {
@@ -35,10 +32,8 @@ header {
             width: auto;
         }
 
-        @media (max-width: 992px) {
-            height: auto; /* allow expansion on mobile */
-
-            .navbar-collapse {
+                .navbar-collapse {
+            @media (max-width: 992px) {
                 position: relative;
                 top: 100%;
                 left: 0;
@@ -46,25 +41,18 @@ header {
                 z-index: 1050;
                 background: rgba(0, 0, 0, 0.9);
                 padding: 12px 0;
-                width: 100%;
-                max-width: 100vw;
-                overflow-x: hidden;
-                margin-top: 0.25rem;
 
-                a {
-                    color: white !important;
-                    padding: 10px 16px;
-                }
-            }
-        }
-
-        @media (max-width: 576px) {
-            .navbar-brand img {
-                max-height: 56px;
+                @media (max-width: 992px) {
+                    a {
+                            color: white !important;
+                            padding: 10px 16px;
+                        }
+                    }
             }
         }
     }
 }
+
 
 /* End Header Section*/
 
@@ -205,8 +193,8 @@ header {
         width: 100% !important;
     }
 
-    .filter-section .product .row > [class^='col'],
-    .filter-section .product .row > [class*=' col'] {
+        .filter-section .product .row>[class^='col'],
+        .filter-section .product .row>[class*=' col'] {
         margin-bottom: 1rem;
     }
 }
