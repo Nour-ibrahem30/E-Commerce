@@ -10,23 +10,19 @@ header .top-header {
     background-color: #826300;
     padding: 5px;
 }
-
 header .navbar {
     background-color: #faeddf !important;
     height: 70px;
 }
-
 @media (max-width: 992px) {
     header .navbar {
         height: 95px;
     }
 }
-
 header .navbar img {
     max-height: 100px;
     width: auto;
 }
-
 @media (max-width: 992px) {
     header .navbar .navbar-collapse a {
         color: white !important;
@@ -40,7 +36,6 @@ header .navbar img {
     height: 80vh;
     color: #fff;
 }
-
 .home::before {
     content: "";
     position: absolute;
@@ -54,11 +49,9 @@ header .navbar img {
     height: 100%;
     z-index: -1;
 }
-
 .home .content {
     max-width: 600px;
 }
-
 .home .content .btn-main {
     background: #826300;
     color: #fff;
@@ -66,7 +59,6 @@ header .navbar img {
     border-radius: 25px;
     transition: 0.3s;
 }
-
 .home .content .btn-main:hover {
     background: #5a4600;
 }
@@ -77,24 +69,20 @@ header .navbar img {
     padding-top: var(--padding-section);
     padding-bottom: var(--padding-section);
 }
-
 .product-section .text .main-title {
     font-size: 1.8rem;
     color: #222;
 }
-
 .product-section .text .btn-outline-dark {
     border-radius: 25px;
     padding: 6px 18px;
     font-weight: 500;
     transition: var(--transition);
 }
-
 .product-section .text .btn-outline-dark:hover {
     background: #222;
     color: #fff;
 }
-
 .product-section .card {
     max-width: 320px;
     min-height: 400px;
@@ -103,35 +91,29 @@ header .navbar img {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: var(--transition);
 }
-
 .product-section .card:hover {
     transform: translateY(-10px);
 }
-
 .product-section .card img {
     width: 100%;
     height: 400px;
     -o-object-fit: cover;
     object-fit: cover;
 }
-
 .product-section .card .card-body h5 {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
 }
-
 .product-section .card .card-body p {
     font-size: 1rem;
     color: #111;
 }
-
 .product-section .Rectangle {
     width: 100%;
     height: 300px;
     border-radius: 12px;
     color: #fff;
 }
-
 .product-section .Rectangle::before {
     content: "";
     position: absolute;
@@ -146,13 +128,11 @@ header .navbar img {
     z-index: -1;
     filter: brightness(0.6);
 }
-
 .product-section .Rectangle h1 {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1rem;
 }
-
 .product-section .Rectangle .btn-main {
     background: #a27b12;
     color: #fff;
@@ -161,7 +141,6 @@ header .navbar img {
     font-weight: 600;
     transition: var(--transition);
 }
-
 .product-section .Rectangle .btn-main:hover {
     background: #7a5c0d;
 }
@@ -172,16 +151,13 @@ header .navbar img {
     padding-top: calc(var(--padding-section) - 20px);
     padding-bottom: var(--padding-section);
 }
-
 .shop .products {
     gap: 40px;
 }
-
 .shop .products .product {
     gap: 20px;
     flex-wrap: wrap;
 }
-
 .shop .products .product .img {
     height: 330px;
     padding: 10px;
@@ -191,17 +167,14 @@ header .navbar img {
     position: relative;
     transition: transform 0.3s ease;
 }
-
 .shop .products .product .img:hover {
     transform: translateY(-5px);
 }
-
 .shop .products .product .img:hover p {
     transform: translateY(-15px);
     background-color: #000;
     color: #fff;
 }
-
 .shop .products .product .img img {
     width: 100%;
     height: 100%;
@@ -209,7 +182,6 @@ header .navbar img {
     object-fit: cover;
     border-radius: 6px;
 }
-
 .shop .products .product .img p {
     background-color: #fff;
     padding: 6px 12px;
@@ -232,18 +204,15 @@ header .navbar img {
     padding-bottom: var(--padding-section);
     background-color: #cccccc;
 }
-
 @media (max-width: 1300px) {
     .service .boxes {
         flex-wrap: wrap;
     }
 }
-
 .service .boxes img {
     width: 40px;
     height: 40px;
 }
-
 .service .boxes p {
     width: auto;
     line-height: 1.6;
@@ -255,11 +224,9 @@ footer {
     background-color: #515050;
     padding: 20px;
 }
-
 footer .info-one p {
     width: 186px;
 }
-
 footer .info-one input {
     background-color: transparent;
     border: none;
@@ -267,5 +234,4 @@ footer .info-one input {
     outline: none;
 }
 
-/* End Footer Section*/
-/*# sourceMappingURL=master.css.map */
+/* End Footer Section*/ /*# sourceMappingURL=index.css.map */
