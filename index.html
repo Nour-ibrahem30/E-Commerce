@@ -56,7 +56,7 @@
                         <a href="#" class="text-dark" aria-label="Account">
                             <i class="fa-solid fa-user" aria-hidden="true"></i>
                         </a>
-                        <a href="#" class="text-dark" aria-label="Cart">
+                        <a href="#" class="text-dark cart-shop" aria-label="Cart">
                             <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
                         </a>
                         <a href="#" class="text-dark" aria-label="Search">
@@ -297,7 +297,23 @@
         </div>
     </footer>
     <!-- End Footer -->
-
+<!-- Hide Elements -->
+<a class="btn btn-primary button-cart" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+    aria-controls="offcanvasExample">
+    Link with href
+</a>
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping cart</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+            etc.
+        </div>
+    </div>
+</div>
     <!-- Start Js File -->
     <script src="./dist/bootstrap.bundle.js" defer></script>
     <script type="module" src="./dist/main.js"></script>

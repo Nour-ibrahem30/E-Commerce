@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const checkBoxes = document.querySelectorAll<HTMLInputElement>("input[type='checkbox'][data-product]");
     const products = document.querySelectorAll<HTMLElement>("[data-product]");
 
+
     const applyFilters = () => {
         const activeFilters: string[] = Array.from(checkBoxes)
             .filter((checkbox) => checkbox.checked)
@@ -60,3 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+// Select Element
+let cartShopping = document.querySelector(".cart-shop") as HTMLElement;
+let buttonSlider = document.querySelector(".button-cart") as HTMLElement;
+buttonSlider.style.display = "none";
+
+cartShopping.onclick = function () {
+    buttonSlider.click()
+}
