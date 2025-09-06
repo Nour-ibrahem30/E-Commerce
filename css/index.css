@@ -2,12 +2,13 @@
 :root {
   --padding-section: 60px;
   --transition: 0.3s;
+  --main-color: #826300;
 }
 
 /* Start Header */
 header .top-header {
   height: 40px;
-  background-color: #826300;
+  background-color: var(--main-color);
   padding: 5px;
 }
 header .navbar {
@@ -65,14 +66,14 @@ header .navbar img {
   max-width: 600px;
 }
 .home .content .btn-main {
-  background: #826300;
+  background: var(--main-color);
   color: #fff;
   padding: 10px 20px;
   border-radius: 25px;
   transition: 0.3s;
 }
 .home .content .btn-main:hover {
-  background: #5a4600;
+  background: var(--main-color);
 }
 
 /* End Home Section */

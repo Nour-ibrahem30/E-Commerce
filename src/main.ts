@@ -1,10 +1,20 @@
+// Select Elements 
+const cartShopping = document.querySelector(".cart-shop") as HTMLElement;
+const buttonSlider = document.querySelector(".button-cart") as HTMLElement;
+const sliderBody = document.querySelector(".offcanvas-body") as HTMLElement;
+const buttonMessage = document.querySelector(".button-message") as HTMLElement;
+const offcanvas = document.querySelector(".offcanvas") as HTMLElement;
+const totalPrice = document.querySelector(".total-price") as HTMLElement;
+const iconRemove = document.querySelector(".icon-remove") as HTMLElement;
+const checkBoxes = document.querySelectorAll<HTMLInputElement>("input[type='checkbox'][data-product]");
+const products = document.querySelectorAll<HTMLElement>("[data-product]:not(input)");
+// Style Element
+buttonSlider.style.display = "none";
+iconRemove.style.display = "none";
+
 // Guard until DOM is ready
 document.addEventListener("DOMContentLoaded", () => {
     // Filtering (runs only if elements exist)
-    const checkBoxes = document.querySelectorAll<HTMLInputElement>("input[type='checkbox'][data-product]");
-    const products = document.querySelectorAll<HTMLElement>("[data-product]");
-
-
     const applyFilters = () => {
         const activeFilters: string[] = Array.from(checkBoxes)
             .filter((checkbox) => checkbox.checked)
@@ -15,11 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             const productType = product.dataset.product || "";
             const shouldShow = activeFilters.length === 0 || activeFilters.includes(productType);
 
-            if (shouldShow) {
-                product.classList.remove("d-none");
-            } else {
-                product.classList.add("d-none");
-            }
+            product.classList.toggle("d-none", !shouldShow);
         });
     };
 
@@ -61,11 +67,88 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
-// Select Element
-let cartShopping = document.querySelector(".cart-shop") as HTMLElement;
-let buttonSlider = document.querySelector(".button-cart") as HTMLElement;
-buttonSlider.style.display = "none";
 
-cartShopping.onclick = function () {
-    buttonSlider.click()
+
+
+// Badge counter
+const countNumberElement = document.createElement("span");
+countNumberElement.classList.add("cart-badge");
+cartShopping.appendChild(countNumberElement);
+
+// Update cart count
+function updateCartCount() {
+    const productsInCart = sliderBody.querySelectorAll(".cart-item");
+    countNumberElement.textContent = `${productsInCart.length}`;
+}
+
+// Update total price
+function updateTotalPrice() {
+    let sum = 0;
+    sliderBody.querySelectorAll(".cart-item .price").forEach((e) => {
+        let text = e.textContent || "0";
+        text = text.replace(/[^0-9.]/g, "");
+        let value = parseFloat(text);
+        sum += isNaN(value) ? 0 : value;
+    });
+    totalPrice.textContent = sum.toFixed(2) + " $";
+}
+
+// Cart toggle
+cartShopping.onclick = () => buttonSlider.click();
+
+// Add product to cart
+products.forEach((e) => {
+    e.addEventListener("click", () => {
+        const productCopy = e.cloneNode(true) as HTMLElement;
+        productCopy.classList.add("cart-item", "col-lg-7", "col-md-6", "col-sm-12");
+        productCopy.style.transition = "0.3s";
+        productCopy.style.marginBottom = "30px";
+
+        const iconRemoveCopy = iconRemove.cloneNode(true) as HTMLElement;
+        iconRemoveCopy.style.cursor = "pointer";
+        iconRemoveCopy.style.display = "block";
+        iconRemoveCopy.style.margin = "30px";
+        iconRemoveCopy.style.color = "red";
+        buttonMessage.click();
+
+        productCopy.appendChild(iconRemoveCopy);
+        sliderBody.appendChild(productCopy);
+
+        // Update UI
+        updateCartCount();
+        updateTotalPrice();
+        buttonSlider.click();
+
+        // Remove product
+        iconRemoveCopy.onclick = () => {
+            productCopy.style.opacity = "0";
+            setTimeout(() => {
+                productCopy.remove();
+                updateCartCount();
+                updateTotalPrice();
+            }, 300);
+        };
+    });
+});
+
+// Disable products when offcanvas is open
+offcanvas.addEventListener("show.bs.offcanvas", () => {
+    products.forEach((e) => (e.style.cursor = "no-drop"));
+});
+offcanvas.addEventListener("hide.bs.offcanvas", () => {
+    products.forEach((e) => (e.style.cursor = "pointer"));
+});
+
+
+// Declare bootstrap if loaded globally
+declare const bootstrap: any;
+
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('liveToast')
+
+if (toastTrigger && typeof bootstrap !== "undefined" && toastLiveExample) {
+    const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+    toastTrigger.addEventListener('click', () => {
+        toastBootstrap.show()
+    })
 }

@@ -11,7 +11,7 @@
     <!-- Start Css Files -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/weidding.css" />
+    <link rel="stylesheet" href="../css/wedding.css" />
     <!-- Library FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         crossorigin="anonymous" />
@@ -48,7 +48,7 @@
                         <a href="#" class="text-dark" aria-label="Account">
                             <i class="fa-solid fa-user" aria-hidden="true"></i>
                         </a>
-                        <a href="#" class="text-dark cart-shop" aria-label="Cart">
+                        <a href="#" class="text-dark cart-shop text-decoration-none" aria-label="Cart">
                             <i class="fa-solid fa-cart-shopping" aria-hidden="true"></i>
                         </a>
                         <a href="#" class="text-dark" aria-label="Search">
@@ -202,7 +202,7 @@
                         </div>
                         <div class="text">
                             <h1>Travel Hoodie</h1>
-                            <p>₹ 699</p>
+                            <p class="price">₹ 699</p>
                         </div>
                     </div>
 
@@ -212,7 +212,7 @@
                         </div>
                         <div class="text">
                             <h1>Classic Suit</h1>
-                            <p>₹ 1200</p>
+                            <p class="price">₹ 1200</p>
                         </div>
                     </div>
 
@@ -222,7 +222,7 @@
                         </div>
                         <div class="text">
                             <h1>Casual Shirt</h1>
-                            <p>₹ 499</p>
+                            <p class="price">₹ 499</p>
                         </div>
                     </div>
 
@@ -232,7 +232,7 @@
                         </div>
                         <div class="text">
                             <h1>Formal Shirt</h1>
-                            <p>₹ 699</p>
+                            <p class="price">₹ 699</p>
                         </div>
                     </div>
                 </div>
@@ -244,7 +244,7 @@
                         </div>
                         <div class="text">
                             <h1>Blazer</h1>
-                            <p>₹ 1500</p>
+                            <p class="price">₹ 1500</p>
                         </div>
                     </div>
 
@@ -254,7 +254,7 @@
                         </div>
                         <div class="text">
                             <h1>Pants</h1>
-                            <p>₹ 799</p>
+                            <p class="price">₹ 799</p>
                         </div>
                     </div>
 
@@ -264,7 +264,7 @@
                         </div>
                         <div class="text">
                             <h1>Overshirt</h1>
-                            <p>₹ 599</p>
+                            <p class="price">₹ 599</p>
                         </div>
                     </div>
 
@@ -274,7 +274,7 @@
                         </div>
                         <div class="text">
                             <h1>Black Suit</h1>
-                            <p>₹ 2000</p>
+                            <p class="price">₹ 2000</p>
                         </div>
                     </div>
                 </div>
@@ -285,7 +285,7 @@
                         </div>
                         <div class="text">
                             <h1>Cotton Shirt</h1>
-                            <p>₹ 499</p>
+                            <p class="price">₹ 499</p>
                         </div>
                     </div>
 
@@ -295,7 +295,7 @@
                         </div>
                         <div class="text">
                             <h1>Linen Shirt</h1>
-                            <p>₹ 699</p>
+                            <p class="price">₹ 699</p>
                         </div>
                     </div>
 
@@ -305,7 +305,7 @@
                         </div>
                         <div class="text">
                             <h1>Polyester Shirt</h1>
-                            <p>₹ 399</p>
+                            <p class="price">₹ 399</p>
                         </div>
                     </div>
 
@@ -315,7 +315,7 @@
                         </div>
                         <div class="text">
                             <h1>Oxford Shirt</h1>
-                            <p>₹ 799</p>
+                            <p class="price">₹ 799</p>
                         </div>
                     </div>
                 </div>
@@ -327,7 +327,7 @@
                         </div>
                         <div class="text">
                             <h1>Checked Shirt</h1>
-                            <p>₹ 599</p>
+                            <p class="price">₹ 599</p>
                         </div>
                     </div>
 
@@ -337,7 +337,7 @@
                         </div>
                         <div class="text">
                             <h1>Floral Shirt</h1>
-                            <p>₹ 899</p>
+                            <p class="price">₹ 899</p>
                         </div>
                     </div>
 
@@ -347,7 +347,7 @@
                         </div>
                         <div class="text">
                             <h1>Weave Shirt</h1>
-                            <p>₹ 999</p>
+                            <p class="price">₹ 999</p>
                         </div>
                     </div>
 
@@ -357,7 +357,7 @@
                         </div>
                         <div class="text">
                             <h1>Knitted Shirt</h1>
-                            <p>₹ 1099</p>
+                            <p class="price">₹ 1099</p>
                         </div>
                     </div>
                 </div>
@@ -445,22 +445,40 @@
     </footer>
     <!-- End Footer -->
     <!-- Hide Elements -->
-    <a class="btn btn-primary button-cart" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-        aria-controls="offcanvasExample">
-        Link with href
-    </a>
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <button class="btn btn-primary button-cart" type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Enable body scrolling</button>
+    
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Shopping cart</h5>
+            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Shopping cart</h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
-        <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-                etc.
+        <div
+            class="offcanvas-body d-flex justify-content-center align-items-center flex-column text-center gap-4 position-relative">
+            <i class="fa-solid fa-trash icon-remove"></i>
+            <div class="offcanvas-footer position-absolute d-flex align-items-center">
+                <span class="total-price"></span>
+                <p>Pound</p>
+            </div>
+        </div>
+        </div>
+        
+        <button type="button" class="btn btn-primary button-message d-none" id="liveToastBtn">Show live toast</button>
+        
+        <div class="toast-container position-fixed top-0 end-0 p-3">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">E-Commerce</strong>
+                    <small>1 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body fw-bold">
+                    Your Product Add In The Cart Shopping
             </div>
         </div>
     </div>
+    <!-- Hide Elements -->
     <!-- Start Js File -->
     <script src="../dist/bootstrap.bundle.js" defer></script>
     <script type="module" src="../dist/main.js"></script>

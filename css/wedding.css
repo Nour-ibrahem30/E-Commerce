@@ -1,19 +1,25 @@
+:root {
+  --padding-section: 60px;
+  --transition: 0.3s;
+  --main-color: #826300;
+}
+
 /* Global overflow fix */
 html,
 body {
   overflow-x: hidden;
 }
 
-/* Avoid images exceeding viewport */
+/* Images responsive */
 img {
   max-width: 100%;
   height: auto;
 }
 
-/* Start Header Section*/
+/* ================= Header ================= */
 header .top-header {
   height: 40px;
-  background-color: #826300;
+  background-color: var(--main-color);
   padding: 5px;
 }
 header .navbar {
@@ -30,6 +36,15 @@ header .navbar img {
   max-height: 100px;
   width: auto;
 }
+header .navbar .navbar-collapse span {
+  background-color: red;
+  padding: 2px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 2px;
+}
 @media (max-width: 992px) {
   header .navbar .navbar-collapse {
     position: relative;
@@ -40,27 +55,22 @@ header .navbar img {
     background: rgba(0, 0, 0, 0.9);
     padding: 12px 0;
   }
-}
-@media (max-width: 992px) and (max-width: 992px) {
   header .navbar .navbar-collapse a {
-    color: white !important;
+    color: #fff !important;
     padding: 10px 16px;
   }
 }
 
-/* End Header Section*/
-/* Start Filter Section*/
+/* ================= Filter Section ================= */
 .filter-section {
   gap: 3rem;
   width: 100%;
   overflow-x: hidden;
-  padding-left: 0;
-  padding-right: 0;
+  padding-inline: 0;
 }
 .filter-section .filter {
   max-width: 270px;
   width: 100%;
-  /* More filters text */
 }
 .filter-section .filter .head {
   border: 1px solid #ccc;
@@ -69,6 +79,13 @@ header .navbar img {
   height: 40px;
   border-radius: 5px;
   box-shadow: 2px 2px 2px #ccc;
+  transition: 0.3s;
+}
+.filter-section .filter .head:hover {
+  background-color: var(--main-color);
+  color: white;
+  box-shadow: 3px 3px 3px rgba(130, 99, 0, 0.6588235294);
+  transform: translateX(15px) scale(1.1);
 }
 .filter-section .filter .head h3 {
   font-size: 20px;
@@ -90,7 +107,6 @@ header .navbar img {
 }
 .filter-section .filter .accordion {
   width: 100%;
-  max-width: 100%;
 }
 .filter-section .filter form div {
   display: flex;
@@ -108,20 +124,20 @@ header .navbar img {
   color: #333;
 }
 .filter-section .filter .accordion-body i {
-  margin-top: 10px;
-  margin-right: 15px;
-  color: #826300;
+  margin: 10px 15px 0 0;
+  color: var(--main-color);
 }
 .filter-section .filter .accordion-body span {
   font-size: 14px;
-  color: #826300;
+  color: var(--main-color);
   cursor: pointer;
 }
 .filter-section .filter .accordion-body span:hover {
   text-decoration: underline;
 }
 .filter-section .product .row {
-  --bs-gutter-x: 0.75rem;
+  --bs-gutter-x: 1rem;
+  margin-inline: 0;
 }
 .filter-section .product .img {
   width: 320px;
@@ -130,38 +146,26 @@ header .navbar img {
 .filter-section .product .img img {
   width: 100%;
   height: 100%;
-  max-width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 .filter-section .product .col-lg-3 {
   display: grid;
-  justify-content: center;
-  align-items: center;
-}
-.filter-section .product .row {
-  margin-left: 0;
-  margin-right: 0;
-  --bs-gutter-x: 1rem;
+  place-items: center;
 }
 
-/* Responsive tweaks */
+/* ================= Responsive ================= */
 @media (max-width: 992px) {
   .filter-section {
     flex-direction: column;
     gap: 1.5rem;
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-inline: 12px;
   }
   .filter-section .filter {
     max-width: 100%;
     padding: 15px;
   }
-  .filter-section .filter .accordion {
-    width: 100% !important;
-  }
-  .filter-section .product .row > [class^=col],
-  .filter-section .product .row > [class*=" col"] {
+  .filter-section .product .row > [class*=col] {
     margin-bottom: 1rem;
   }
 }
@@ -171,23 +175,18 @@ header .navbar img {
     height: auto;
   }
   .filter-section .product .img img {
-    width: 100%;
-    height: auto;
     -o-object-fit: cover;
        object-fit: cover;
   }
 }
-/* End Filter Section*/
-/* Start Footer Section*/
+/* ================= Footer ================= */
 footer {
   background-color: #515050;
   padding: 20px;
 }
-
 footer .info-one p {
   width: 186px;
 }
-
 footer .info-one input {
   background-color: transparent;
   border: none;
@@ -195,11 +194,41 @@ footer .info-one input {
   outline: none;
 }
 
-/* End Footer Section*/
+/* ================= Utilities ================= */
 .hide {
   display: none !important;
 }
 
 .show {
   display: block !important;
-}/*# sourceMappingURL=weidding.css.map */
+}
+
+/* ================= Offcanvas ================= */
+.offcanvas {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.offcanvas .offcanvas-footer {
+  width: auto;
+  height: 50px;
+  border: 2px solid var(--main-color);
+  padding: 23px;
+  border-radius: 16px;
+  bottom: 10px;
+}
+.offcanvas .offcanvas-footer p {
+  margin: 0 auto 0 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.offcanvas .offcanvas-footer span {
+  font-size: 20px;
+  font-weight: bold;
+  color: darkgoldenrod;
+}
+
+.area-message {
+  position: absolute;
+  top: 0;
+  left: 5px;
+}/*# sourceMappingURL=wedding.css.map */
