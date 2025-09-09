@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-padding-top: 2rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+/* sale */
+.sale {
+    border: 2px solid #826300;
+    background-color: #826300;
+}
+
+/* sale */
+/* navbar */
+nav {
+    background-color: #FAEDDF;
+    height: 8vh;
+}
+
+@media (max-width: 912px) {
+    nav {
+        height: auto !important;
+    }
+}
+
+/* navbar */
+/* custom */
+.custom {
+    background: url(../imgs/bg-image.png)no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.custom-title h3 {
+    font-size: 35px;
+}
+
+.custom-title h1 {
+    font-size: 60px;
+}
+
+@media (max-width: 720px) {
+    .custom-title h3 {
+        font-size: 20px;
+    }
+
+    .custom-title h1 {
+        font-size: 40px;
+    }
+}
+
+/* custom */
+/* services */
+.services .card-body a:hover {
+    background-color: black;
+    color: white;
+}
+
+/* services */
+/* footer */
+footer {
+    background-color: #515050;
+    padding: 20px;
+}
+
+footer .info-one p {
+    width: 186px;
+}
+
+footer .info-one input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid;
+    outline: none;
+}
+
+/* footer */
