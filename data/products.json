@@ -5,7 +5,7 @@
         "price": 100,
         "category": "Hoodie",
         "cloth": "Knited",
-        "image": "imgs/product1.png"
+        "image": "../imgs/product1.png"
     },
     {
         "id": 2,
@@ -13,7 +13,7 @@
         "price": 150,
         "category": "Over Shirts",
         "cloth": "Flor",
-        "image": "imgs/product2.png"
+        "image": "../imgs/product2.png"
     },
     {
         "id": 3,
@@ -21,7 +21,7 @@
         "price": 200,
         "category": "Casual Shirts",
         "cloth": "Weave",
-        "image": "imgs/product3.png"
+        "image": "../imgs/product3.png"
     },
     {
         "id": 4,
@@ -29,7 +29,7 @@
         "price": 200,
         "category": "Formal Shirts",
         "cloth": "Cotton",
-        "image": "imgs/product4.jpg"
+        "image": "../imgs/product4.jpg"
     },
     {
         "id": 5,
@@ -37,7 +37,7 @@
         "price": 200,
         "category": "Blazers",
         "cloth": "Linen",
-        "image": "imgs/product5.png"
+        "image": "../imgs/product5.png"
     },
     {
         "id": 6,
@@ -45,7 +45,7 @@
         "price": 200,
         "category": "Pants and Trousers",
         "cloth": "Flor",
-        "image": "imgs/Rectangle 6.png"
+        "image": "../imgs/Rectangle 6.png"
     },
     {
         "id": 7,
@@ -53,7 +53,7 @@
         "price": 200,
         "category": "Suits",
         "cloth": "Weave",
-        "image": "imgs/product7.png"
+        "image": "../imgs/product7.png"
     },
     {
         "id": 8,
@@ -61,7 +61,7 @@
         "price": 200,
         "category": "Pants and Trousers",
         "cloth": "Cotton",
-        "image": "imgs/product8.png"
+        "image": "../imgs/product8.png"
     },
     {
         "id": 9,
@@ -69,7 +69,7 @@
         "price": 200,
         "category": "Blazers",
         "cloth": "Linen",
-        "image": "imgs/product9.png"
+        "image": "../imgs/product9.png"
     },
     {
         "id": 10,
@@ -77,7 +77,7 @@
         "price": 200,
         "category": "Pants and Trousers",
         "cloth": "Knited",
-        "image": "imgs/product10.png"
+        "image": "../imgs/product10.png"
     },
     {
         "id": 11,
@@ -85,7 +85,7 @@
         "price": 200,
         "category": "Blazers",
         "cloth": "Flor",
-        "image": "imgs/product11.png"
+        "image": "../imgs/product11.png"
     },
     {
         "id": 12,
@@ -93,6 +93,6 @@
         "price": 200,
         "category": "Blazers",
         "cloth": "Weave",
-        "image": "imgs/product12.png"
+        "image": "../imgs/product12.png"
     }
 ]
